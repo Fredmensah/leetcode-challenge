@@ -14,7 +14,7 @@ var twoSum = function(nums, target) {
             const firstValue = nums[numIndex];
             const secondValue = nums[selectedIndex];
             
-            if (numIndex !== selectedIndex && firstValue !== secondValue) {
+            if (numIndex !== selectedIndex) {
                 if ((firstValue + secondValue) === target) {
                     return [numIndex , selectedIndex]; 
                 }
