@@ -4,13 +4,12 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    const validValues = [];
-    
+    const arrayLength = nums.length;
     for (const num of nums) {
         const numIndex = nums.indexOf(num);
         let selectedIndex = 0;
 
-        while (selectedIndex < (nums.length)) {     
+        while (selectedIndex < arrayLength) {     
             const firstValue = nums[numIndex];
             const secondValue = nums[selectedIndex];
             
